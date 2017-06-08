@@ -57,7 +57,7 @@ average_amplitude = total_amplitude/total_round
 final_data = final_data.astype(float)
 print("Avreage amplitude : ",average_amplitude)
 print("Total video watching time is ",end_time-start_time,"  len of final data is  ",len(final_data)) #will be 375000
-time_axis = np.arange(0,10,0.001,float) #from 0 to 10 seconds, the difference between each is 0.001 (as sampling freq = 1000 Hz)
+time_axis = np.arange(0,100,0.001,float) #from 0 to 10 seconds, the difference between each is 0.001 (as sampling freq = 1000 Hz)
 #plot as the floating type
-plt.plot(time_axis,final_data[0:10000])#since we sample from 0 to 10 with precision 0.001(1000hz)
+plt.plot(time_axis,final_data[0:100000])#since we sample from 0 to 10 with precision 0.001(1000hz)
 plt.show()
