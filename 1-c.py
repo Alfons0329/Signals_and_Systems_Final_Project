@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-fptr=open("./physiology/sub019_baseline_C1.csv",'r')
+fptr=open("./physiology/sub019_baseline_C3.csv",'r')
 read_data = fptr.read()
 ts_data = read_data.split('\n')#time_splitted data , using next line as split token
-len_of_tsdata = len(ts_data)-1 #get 2d vector each row's end length
+len_of_tsdata = len(ts_data)-1 #get 2d vector one row's end length
 print(len_of_tsdata)
 
 for i in range(len(ts_data)):
